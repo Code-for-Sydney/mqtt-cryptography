@@ -1,6 +1,6 @@
 const mqtt = require("mqtt");
 
-const client = mqtt.connect("mqtt://localhost:1883");
+const client = mqtt.connect("mqtt://broker.hivemq.com");
 
 client.on("connect", () => {
   client.subscribe("1");

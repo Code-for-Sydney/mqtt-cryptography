@@ -5,7 +5,7 @@ use paho_mqtt as mqtt;
 
 fn main() {
     let create_opts = mqtt::CreateOptionsBuilder::new()
-        .server_uri("tcp://localhost:1883")
+        .server_uri("tcp://broker.hivemq.com")
         .client_id("echo_client")
         .finalize();
 

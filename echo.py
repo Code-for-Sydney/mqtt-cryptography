@@ -7,7 +7,7 @@ def on_message(client, userdata, message):
         print(msg)
 
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
-client.connect("localhost", 1883)
+client.connect("broker.hivemq.com", 1883)
 client.subscribe("1")
 client.on_message = on_message
 

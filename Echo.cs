@@ -8,7 +8,7 @@ var factory = new MqttFactory();
 var client = factory.CreateMqttClient();
 
 var options = new MqttClientOptionsBuilder()
-    .WithTcpServer("localhost", 1883)
+    .WithTcpServer("broker.hivemq.com", 1883)
     .Build();
 
 client.ApplicationMessageReceivedAsync += e =>
