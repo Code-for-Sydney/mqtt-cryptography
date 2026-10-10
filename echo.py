@@ -1,4 +1,6 @@
 
+import time
+
 import paho.mqtt.client as mqtt
 
 def on_message(client, userdata, message):
@@ -15,3 +17,4 @@ client.loop_start()
 
 while True:
     client.publish("1", "echo")
+    time.sleep(1)
